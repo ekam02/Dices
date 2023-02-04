@@ -30,12 +30,3 @@ class Dices:
                 dices += FORMAT[j][i]
         dices += f'\n{FORMAT[7]*len(self.__dice_list)}'
         return dices
-
-
-if __name__ == '__main__':
-    a = Dices(5)
-    print(a.dice_list)
-    z = Random().choices(range(1, 7), k=7)
-    a.dice_list = z
-    print(a.dice_list)
-    print(a)
